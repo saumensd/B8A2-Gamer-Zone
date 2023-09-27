@@ -57,7 +57,6 @@ body {
     display: flex;
     list-style: none;
     color: #3C354F;
-    /* text-align: center; */
     font-size: 18px;
     font-weight: 500;
 }
@@ -71,12 +70,6 @@ body {
 
 .header-menu-bar-items ul>li:hover {
     color: rgb(196, 196, 190);
-}
-
-.header-menu-bar-items ul>li:nth-child(3)>img:hover {
-    background-color: rgb(196, 196, 190);
-    padding: 0px;
-    margin: 0px;
 }
 
 .header-menu-bar-items ul>li:nth-child(3) {
@@ -100,37 +93,107 @@ body {
 
 .play-like-section {
     display: flex;
-    margin: auto 150px;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
     background-image: url('../images/Group\ 14.png');
-    background-position: right;
-    /* background-size: cover; */
+    background-position: left;
+    height: 500px;
+    padding: 0 230px;
 }
 
-.play-like-section>div>h2 {
+.half-width {
+    width: 50%;
+}
+
+.half-width img {
+    width: 100%;
+}
+
+.play-like-section div>p {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.play-like-section>div>h3 {
     color: var(--color-three);
-    text-align: center;
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.play-like-section>div>h1 {
-    text-align: center;
-    font-size: 95px;
-    font-style: normal;
+.play-like-section>div>h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 65px;
     font-weight: 800;
+    text-transform: uppercase;
+    color: var(--linear-color);
+
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+}
+
+.button>button {
+    padding: 15px 20px;
+    background-color: var(--linear-color);
+    border-radius: 48px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
 
 
+.we-are-gamer {
+    display: flex;
+    align-items: center;
+}
+
+.we-are-gamer-text>h2,
+.we-are-gamer-text>h3,
+.we-are-gamer-text>h4,
+.we-are-gamer-text>p {
+    text-align: right;
+
+}
+
+.know {
+    padding: 21px 40px;
+    gap: 10px;
+    background-color: #FF42A5;
+    font-size: 20px;
+    border-radius: 35px;
+    color: #FFF;
+}
+
+.we-are-h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #F948B2;
+}
+
+.we-are-gamer-text>h3 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.we-are-gamer-text p {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.we-are-gamer {
+    margin: 0 150px;
+}
 
 /* mobile media query styles */
 @media screen and (max-width:576px) {
-    header {
+    .header {
         flex-direction: column;
     }
 
@@ -141,11 +204,69 @@ body {
     .header-menu-bar-items ul>li {
         margin-top: 20px;
     }
+
+    .play-like-section {
+        margin-top: 150px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-image: none;
+        padding: 0;
+    }
+
+    .half-width {
+        width: 90%;
+    }
+
+    #play-like-text {
+        background-image: url('../images/Group\ 14.png');
+        background-position: left;
+        background-size: contain;
+        width: 70%;
+        padding-left: 20px;
+
+    }
+
+    .play-like-section div>p {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .play-like-section>div>h3 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .play-like-section>div>h2 {
+        font-size: 50px;
+        font-weight: 700;
+
+    }
+
+    .button>button {
+        padding: 13px 17px;
+        font-size: 13px;
+        font-weight: 450;
+    }
+
+    .we-are-gamer {
+        flex-direction: column;
+        margin: 0px;
+        margin-top: 100px;
+    }
+
+    .we-are-gamer-text>h2,
+    .we-are-gamer-text>h3,
+    .we-are-gamer-text>h4,
+    .we-are-gamer-text>p {
+        text-align: center;
+
+    }
+
 }
 
 /* tablets media query style */
 @media screen and (min-width:576px) and (max-width:992px) {
-    header {
+    .header {
         flex-direction: column;
     }
 
@@ -156,5 +277,73 @@ body {
 
     .header-menu-bar-items ul>li {
         margin-top: 20px;
+    }
+
+    .play-like-section {
+        margin-top: 150px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-image: none;
+        padding: 0;
+    }
+
+    .half-width {
+        width: 70%;
+    }
+
+    .half-width img {
+        margin-top: 40px;
+    }
+
+
+    #play-like-text {
+        background-image: url('../images/Group\ 14.png');
+        background-position: left;
+        background-size: contain;
+        width: 70%;
+        padding-left: 20px;
+
+    }
+
+    .play-like-section div>p {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .play-like-section>div>h3 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .play-like-section>div>h2 {
+        font-size: 50px;
+        font-weight: 700;
+
+    }
+
+    .button>button {
+        padding: 13px 17px;
+        font-size: 13px;
+        font-weight: 450;
+    }
+
+    .we-are-gamer {
+        flex-direction: column;
+        margin: 0px;
+        margin-top: 100px;
+    }
+
+    .we-are-gamer-text button {
+        /* position: relative;
+    left: 250px; */
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 25px;
+        gap: 10px;
+        border-radius: 38px;
+        background: #FF42A5;
+        color: #FFF;
+        font-size: 13px;
+        font-weight: 500;
     }
 }
