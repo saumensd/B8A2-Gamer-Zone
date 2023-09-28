@@ -5,12 +5,11 @@ body {
 }
 
 /* -------------------header style------------------------------ */
-
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto 150px;
+    margin: 0 150px;
 }
 
 .header-logo {
@@ -22,53 +21,44 @@ body {
 .header-logo img {
     width: 86.041px;
     height: 40px;
-    transition: width 1s, height 1s;
-}
-.header-logo h2 {
-    text-align: center;
-    font-size: 45px;
-    font-weight: 700;
-    transition: color 3s;
 }
 
-.header-logo h2>span {
-    color: var(--linear-color);
+#gammer {
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#g {
+    color: #FF42A5;
 }
 
 .header-menu-bar-items ul {
     display: flex;
+    align-items: center;
     list-style: none;
-    color: #3C354F;
-    font-size: 18px;
-    font-weight: 500;
 }
 
 .header-menu-bar-items ul>li {
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    margin-left: 10px;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 20px;
 }
 
-.header-menu-bar-items ul>li:hover {
-    color: rgb(196, 196, 190);
-}
-
-.header-menu-bar-items ul>li:nth-child(3) {
-    background-color: var(--header-background-color);
-    padding: 10px;
-}
-
-.header-menu-bar-items ul>li:nth-child(3)>img:first-child {
-    width: 20px;
-    height: 18px;
-    padding-left: 5px;
-}
-
-.header-menu-bar-items ul>li:nth-child(3)>img:nth-child(2) {
+#youtube-header-icon {
     width: 15px;
-    height: 14px;
-    padding-left: 5px;
+    height: 15px;
+}
+
+#tik-tok-header-icon {
+    width: 15px;
+    height: 15px;
+}
+
+#follow-us-on-background-color {
+    border-radius: 8px;
+    background-color: rgba(11, 2, 35, 0.10);
 }
 
 /* -----------------------------------------main style ----------------------------------------*/
@@ -78,14 +68,28 @@ body {
 
 
 /* -----------------------------------------------------------------mobile media query styles------------------------------------------------------------------------ */
- 
-@media screen and (max-width:576px) {
-      
 
-} 
+@media screen and (max-width:576px) {
+    /* ---------header style responsive for mobiles------ */
+    .header{
+        flex-direction: column;
+    }
+    .header-logo {
+        display: flex;
+        margin-bottom: 0px;
+    }
+    .header-menu-bar-items ul {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    
+}
 
 /* -----------------------------------------------------------------tablets media query style------------------------------------------------------------------------- */
- 
+
 @media screen and (min-width:576px) and (max-width:992px) {
-    
+    /* ---------header style responsive for tablets------ */
+    .header{
+        flex-direction: column;
+    }
 }
