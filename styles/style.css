@@ -158,6 +158,28 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
 }
+.games-title{
+    text-align: center;
+}
+
+#youtube{
+    width: 1.5rem;
+    color: aquamarine;
+}
+#youtube-tag{
+    color: rgb(68, 71, 80);
+    background-color: #edefef;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 84rem;
+    left: 53rem;
+}
+.online-games-card{
+    display: flex;
+    justify-content: space-around;
+}
+
 
 
 /*---------------------------------------- footer style---------------------------------------------------- */
@@ -193,6 +215,14 @@ body {
         width: 20rem;
         text-align: center;
     }
+    .online-games-card{
+       flex-direction: column;
+       align-items: center;
+    }
+    #youtube-tag{
+        display: none;
+        
+    }
 
 }
 
@@ -216,4 +246,12 @@ body {
         width: 25rem;
         text-align: center;
     }
+    .online-games-card{
+        flex-direction: column;
+        align-items: center;
+     }
+     #youtube-tag{
+         display: none;
+        
+     }
 }
